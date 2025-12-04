@@ -10,6 +10,11 @@ html {
 }
 
 @font-face {
+  font-family: "Font1";
+  src: url("Fonts/Convergence-Regular.ttf");
+}
+
+@font-face {
   font-family: "Round Key";
   src: url("Fonts/RoundkeySoft-Regular.ttf");
 }
@@ -154,7 +159,7 @@ nav ul li a:hover {
 /* TEXT */
 .divider span:nth-child(2) {
   padding: 0 0px;
-  font-family: "Cinzel Decorative", serif;
+  font-family: "font1", serif;
   font-size: 45px;
   font-weight: 600;
   color: #4b4849;
@@ -345,11 +350,19 @@ nav ul li a:hover {
   z-index: 0;
 }
 
+.floor-plan-child:hover img {
+  z-index: 2;
+}
+
 .floor-plan:hover .floor-plan-child img {
   z-index: 2;
 }
 
 .floor-plan:hover .cnf-pop-text {
+  visibility: hidden;
+}
+
+.floor-plan-child:hover .cnf-pop-text {
   visibility: hidden;
 }
 
@@ -362,15 +375,17 @@ nav ul li a:hover {
   border-radius: 0px 10px 10px 0px;
   overflow: hidden;
 }
-
 .cnf-pop-text {
   position: absolute;
   color: white;
   font-size: 40px;
-  font-weight: 600;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-family: "Sunset heaven";
+  font-weight: 500;
+  font-family: "Poppin";
+  /* font-family: "Sunset heaven"; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .font-s-h {
@@ -612,3 +627,14 @@ nav ul li a:hover {
   min-height: 100px;
 }
 
+.amenities-icon {
+  width: 200px;
+  border-radius: 20px;
+  background-color: rgb(222, 222, 222);
+  border: solid 4px var(--color1);
+  color: var(--color1);
+  padding: 60px 40px;
+  margin: auto;
+  font-size: 50px;
+  z-index: 2;
+}
