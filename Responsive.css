@@ -1,0 +1,182 @@
+.hero-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  html {
+    overflow-x: hidden;
+  }
+  .hero-sub-container {
+    top: 25%;
+    height: 150px;
+    padding: 10px !important;
+  }
+
+  .container-fluid {
+    width: 100vw !important;
+
+    padding: 30px 10px 30px 10px !important;
+  }
+  .container-xl {
+    width: 100%;
+  }
+
+  #home {
+    padding: 0px !important;
+  }
+
+  .divider span:nth-child(2) {
+    font-size: 25px;
+  }
+
+  .divider {
+    margin: 0px !important;
+  }
+
+  .hero-desktop {
+    display: none;
+  }
+  .hero-mobile {
+    display: block;
+  }
+
+  #overview h2 {
+    font-size: 20px !important;
+  }
+
+  #overview svg {
+    width: 100px;
+  }
+
+  .svg-line-right {
+    margin-right: 0px !important;
+  }
+
+  .my-button1 {
+    font-size: 12px;
+  }
+
+  .discover-home {
+    font-size: 20px !important;
+  }
+
+  .refine-home {
+    width: 90vw !important;
+    font-size: 20px !important;
+  }
+
+  .my-paragraph {
+    font-size: 12px;
+    width: 90% !important;
+  }
+  .blue-para {
+    width: 90% !important;
+    padding: 20px !important;
+  }
+
+  #overview img {
+    width: 90% !important;
+  }
+
+  .header-2-down svg {
+    margin-right: -10px !important;
+  }
+
+  .overview-heading {
+    padding: 0px !important;
+  }
+
+  .gs3 {
+    height: 65vh !important;
+  }
+
+  .btn2 {
+    width: 90vw !important;
+  }
+
+  .carousel-control-next {
+    right: 10vw;
+    bottom: -135%;
+  }
+
+  .carousel-control-prev {
+    left: 10vw;
+    bottom: -135%;
+  }
+
+  .amenities-slider {
+    width: 100% !important;
+  }
+
+  .map {
+    padding: 0px !important;
+  }
+  .map iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .accordion-button {
+    font-size: 15px !important;
+  }
+
+  .list-group-item {
+    font-size: 12px;
+  }
+
+  .project-gallery {
+    width: 100% !important;
+  }
+
+  .project-gallery .container-fluid {
+    height: 320px !important;
+  }
+
+  .project-gallery .carousel-control-prev,
+  .project-gallery .carousel-control-next {
+    margin-top: 15px;
+  }
+
+  .cnf-pop-text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .typical-f {
+    margin-bottom: -30px !important;
+  }
+
+  .more-slider {
+    display: none;
+  }
+
+  .reraDetails .container-xl {
+    padding: 10px !important;
+  }
+
+  .reraDetails .card-title {
+    font-size: 12px;
+  }
+  .reraDetails .card-text {
+    font-size: 12px;
+  }
+
+  .reraDetails i {
+    font-size: 20px;
+  }
+
+  .reraDetails-right {
+    border: none !important;
+  }
+
+  .yt-video {
+    width: 100%;
+    padding: 0px !important;
+    overflow: hidden;
+  }
+
+  .yt-video iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

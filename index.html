@@ -449,6 +449,7 @@
     <link rel="stylesheet" href="Buttons.css" />
     <link rel="stylesheet" href="horizontal_scroll.css" />
     <link rel="stylesheet" href="SectionSlider.css" />
+    <link rel="stylesheet" href="Responsive.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -460,25 +461,15 @@
       <img
         src="Assets/NandaDeepElevation.jpg
         "
-        class="w-100"
+        class="w-100 hero-desktop"
         alt="..."
       />
-      <!-- 
-      <div
-        class="hero-sub-container border d-flex align-items-center justify-content-center flex-column bg-white-glass2 boxShadow"
-        style="width: 500px; padding: 20px"
-        data-aos="zoom-in"
-        data-aos-duration="1200"
-        data-aos-easing="ease-out-cubic"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        <img style="width: 300px" src="Assets/Vaibhav_vista_logo.png" alt="" />
-        <h2 class="Cinzel text-uppercase text-center" style="color: #274c77">
-          Discover a Home Built on Trust
-        </h2>
-        <button class="my-button1">Enquiry Now</button>
-      </div> -->
+      <img
+        src="Assets/Nandadeepelvation.png
+        "
+        class="w-100 hero-mobile"
+        alt="..."
+      />
     </div>
 
     <!---------------------------------------------- Overview -------------------------------------------------------------->
@@ -486,7 +477,7 @@
       <div
         class="container-xl d-flex align-items-center justify-content-center flex-wrap gap-4"
       >
-        <div class="p-5" style="color: #274c77">
+        <div class="p-5 overview-heading" style="color: #274c77">
           <h2
             class="text-center w-100 font1"
             style="font-size: 50px; z-index: 2; margin: 0px; font-weight: 600"
@@ -498,6 +489,7 @@
           >
             <span
               ><svg
+                class="svg-line-right"
                 style="margin-right: -50px"
                 height="5"
                 width="300"
@@ -514,7 +506,7 @@
             >A Renewed
           </h2>
           <h2
-            class="text-center w-100 font1"
+            class="text-center w-100 font1 header-2-down"
             style="font-size: 50px; z-index: 2; margin: 0px; font-weight: 600"
             data-aos="slide-left"
             data-aos-duration="1200"
@@ -525,6 +517,7 @@
             Way of Living
             <span
               ><svg
+                class="svg-line-left"
                 style="margin-right: -300px"
                 height="5"
                 width="300"
@@ -542,7 +535,7 @@
           </h2>
         </div>
         <div
-          class="w-48 border p-5 boxShadow my-flex flex-column gap-2"
+          class="blue-para w-48 border p-5 boxShadow my-flex flex-column gap-2"
           style="border-radius: 20px; background-color: #274c77; color: white"
         >
           <p class="fs-6" style="">
@@ -586,7 +579,7 @@
           <span></span><span>&nbsp;About Us&nbsp;</span><span></span>
         </div>
         <div
-          class="w-80 border p-4 boxShadow my-flex flex-column gap-2"
+          class="w-80 border p-4 boxShadow my-flex flex-column gap-2 blue-para"
           style="border-radius: 20px; background-color: #274c77; width: 60%"
         >
           <p class="text-justify" style="color: white">
@@ -611,7 +604,7 @@
           <span></span><span>&nbsp;Amenities&nbsp;</span><span></span>
         </div>
         <p
-          class="bg-blue p-2"
+          class="bg-blue p-2 my-paragraph"
           style="z-index: 5; border-radius: 10px; width: 80%"
         >
           Our amenities are created to provide a harmonious balance of comfort,
@@ -619,7 +612,10 @@
           designed to offer residents an experience that enriches daily living
           and inspires moments of calm, joy, and connection.
         </p>
-        <div class="boxShadow" style="width: 80%; border-radius: 20px">
+        <div
+          class="boxShadow amenities-slider"
+          style="width: 80%; border-radius: 20px"
+        >
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
@@ -781,7 +777,7 @@
         </div>
 
         <div
-          class="container-fluid w-48 boxShadow"
+          class="container-fluid w-48 boxShadow map"
           style="
             padding: 0px;
             height: 450px;
@@ -985,7 +981,7 @@
     <!---------------------------------------------- Project Gallery -------------------------------------------------------------->
     <div class="container-fluid py-5">
       <div
-        class="d-flex align-items-start justify-content-center flex-wrap"
+        class="project-gallery d-flex align-items-start justify-content-center flex-wrap"
         style="width: 1200px; margin: auto"
       >
         <div class="divider header">
@@ -1078,13 +1074,13 @@
     <!---------------------------------------------- Floor Plan -------------------------------------------------------------->
     <div class="container-fluid py-5 pt-0" id="floor-plan">
       <div
-        class="container-xl d-flex align-items-center justify-content-center flex-wrap gap-0"
+        class="container-xl d-flex align-items-center justify-content-center flex-wrap gap-2"
       >
         <div class="divider header">
           <span></span><span>&nbsp;Floor Plan&nbsp;</span><span></span>
         </div>
 
-        <div class="container-fluid floor-plan center-element mb-3">
+        <div class="container-fluid floor-plan center-element mb-3 typical-f">
           <div
             class="container-fluid floor-plan-child w-100 p-0 d-flex"
             data-aos="slide-left"
@@ -1141,7 +1137,7 @@
     </div>
     <!---------------------------------------------- extra section -------------------------------------------------------------->
 
-    <div class="container-fluid py-5 bg-blue">
+    <div class="container-fluid py-5 bg-blue reraDetails">
       <div
         class="container-xl boxShadow d-flex flex-wrap align-items-center"
         style="
@@ -1220,7 +1216,7 @@
           </div>
         </div>
         <div
-          class="container-fluid w-48 border-start border-dark d-flex flex-column justify-content-center align-items-start p-3"
+          class="container-fluid w-48 border-start border-dark d-flex flex-column justify-content-center align-items-start p-3 reraDetails-right"
         >
           <div class="card-body">
             <h5 class="fs-1 font1">NANDADEEP</h5>
